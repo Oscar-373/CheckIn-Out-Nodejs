@@ -8,7 +8,7 @@ const { registrationsRouter } = require("./routes/registrations.routes");
 const app = express();
 
 // Habilitar la aplicación Express para recibir datos JSON.
-app.use(express.json());
+app.use(express.json());  //Middleware
 
 // Endpoints.
 app.use("/api/v1/registrations", registrationsRouter);
